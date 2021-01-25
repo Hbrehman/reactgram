@@ -8,10 +8,16 @@ const useStyles = makeStyles((theme) => ({
   mb: {
     marginBottom: "3rem",
     position: "relative",
-    alignItems: "center",
+    // alignItems: "center",
   },
   center: {
     textAlign: "center",
+  },
+  toolbar: {
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "space-between",
+    margin: "0 10%",
   },
 }));
 
@@ -20,7 +26,8 @@ const Navbar = ({ totalCounters }) => {
   return (
     <div>
       <AppBar className={classes.mb}>
-        <Toolbar>
+        <Toolbar className={classes.toolbar}>
+          <Typography variant="h6"> &lt; React Gram /&gt; </Typography>
           <Typography variant="h6" component="div">
             {totalCounters}
           </Typography>

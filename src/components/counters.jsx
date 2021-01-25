@@ -60,6 +60,7 @@ const Counters = ({
           <List
             style={{
               width: "15rem",
+              cursor: "pointer",
             }}
             component="nav"
           >

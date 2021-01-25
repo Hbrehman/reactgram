@@ -6,6 +6,8 @@ import Navbar from "./components/navbar";
 import { pagination } from "./utils/pagination";
 import _ from "lodash";
 import firebaseDB from "./firebase.js";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 class App extends Component {
   state = {
@@ -43,14 +45,13 @@ class App extends Component {
   handleFormInput = (e) => {
     e.preventDefault();
     const data = new FormData(e.target);
-    // const counters = Object.keys(this.state.counters);
 
-    if (data.get("value") <= 0)
-      return alert("Input value cannot be lower or equal to 0");
     if (data.get("name").length === 0)
-      return alert("Name filed cannot be empty");
+      return toast.error("🚨 Name filed cannot be empty");
     if (data.get("class").length === 0)
-      return alert("Class Field cannot be empty");
+      return toast.error("🚨 Class Field cannot be empty");
+    if (data.get("value") <= 0)
+      return toast.error("🚨 Input value cannot be lower or equal to 0");
 
     const counter = {
       name: data.get("name"),
@@ -154,6 +155,7 @@ class App extends Component {
 
     return (
       <div>
+        <ToastContainer />
         <Navbar
           totalCounters={
             Object.keys(this.state.counters)

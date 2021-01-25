@@ -22,13 +22,24 @@ class CountersTable extends Component {
         <Table aria-label="simple table">
           <TableHead>
             <TableRow>
-              <TableCell onClick={() => onSort("name")}>
+              <TableCell
+                style={{ cursor: "pointer" }}
+                onClick={() => onSort("name")}
+              >
                 {this.renderSortIcon("name")} Name
               </TableCell>
-              <TableCell onClick={() => onSort("stdClass")} align="right">
+              <TableCell
+                style={{ cursor: "pointer" }}
+                onClick={() => onSort("stdClass")}
+                align="right"
+              >
                 {this.renderSortIcon("stdClass")} Class
               </TableCell>
-              <TableCell onClick={() => onSort("value")} align="right">
+              <TableCell
+                style={{ cursor: "pointer" }}
+                onClick={() => onSort("value")}
+                align="right"
+              >
                 {this.renderSortIcon("value")} value
               </TableCell>
               <TableCell align="right"></TableCell>
