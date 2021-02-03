@@ -13,7 +13,7 @@ require("./startup/config")();
 require("./startup/validation")();
 
 app.use(express.static("client/build"));
-app.all("/", (req, res) => {
+app.all("*", (req, res) => {
   res.sendFile(path.resolve(__dirname, "client", "build", "index.html"));
 });
 
