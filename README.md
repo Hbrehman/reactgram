@@ -3,7 +3,8 @@
 
 <img align="center" src="https://drive.google.com/file/d/1VWABJeyyIzoSqJG2g5ap9X9zuEHiK3lV" width="56%">
 ![image](https://drive.google.com/file/d/1VWABJeyyIzoSqJG2g5ap9X9zuEHiK3lV)
-### [Live Demo](https://https://card-project-6d96a.web.app/)
+
+### [Live Demo](https://card-project-6d96a.web.app/)
 
 #### What you need to run this code
 1. Node (13.12.0)
