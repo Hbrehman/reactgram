@@ -67,7 +67,7 @@ class Gadgets extends Component {
     const { user } = this.props;
 
     const filteredGadgets =
-      selectedCategory && selectedCategory._id && selectedCategory._id != "all"
+      selectedCategory && selectedCategory._id && selectedCategory._id !== "all"
         ? allGadgets.filter((cur) => cur.category._id === selectedCategory._id)
         : allGadgets;
 

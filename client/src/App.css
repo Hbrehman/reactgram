@@ -7,3 +7,26 @@
 body {
   background-color: #eeee !important;
 }
+
+.app {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-height: 100vh;
+}
+
+.form {
+  background-color: white;
+  padding: 30px;
+  margin: auto;
+}
+
+@media (min-width: 586px) {
+  .form {
+    background-color: white;
+    padding: 30px;
+    max-width: 350px;
+    margin: auto;
+    margin-top: 30px;
+  }
+}

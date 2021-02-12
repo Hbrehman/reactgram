@@ -28,16 +28,18 @@ class RegisterForm extends Form {
 
       window.location = "/";
     } catch (ex) {
-      if (ex.response && ex.response.status === 400)
+      if (ex.response && ex.response.status === 400) {
+        console.log(this.state.errors);
         var errors = { ...this.state.errors };
-      errors.username = ex.response.data;
-      this.setState({ errors });
+        errors.username = ex.response.data;
+        this.setState({ errors });
+      }
     }
   };
   render() {
     return (
-      <div>
-        <h1>Register</h1>
+      <div className="form">
+        <h4 className="text-center">Register</h4>
 
         <form onSubmit={this.handleSubmit}>
           {this.renderInput("username", "Username")}

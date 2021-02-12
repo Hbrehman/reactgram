@@ -37,8 +37,8 @@ class LoginForm extends Form {
 
   render() {
     return (
-      <div>
-        <h1>Login</h1>
+      <div className="form">
+        <h4 className="text-center">Login</h4>
         <form onSubmit={this.handleSubmit}>
           {this.renderInput("username", "Username")}
           {this.renderInput("password", "Password", "password")}

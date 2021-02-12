@@ -68,12 +68,9 @@ class GadgetForm extends Form {
   }
 
   render() {
-    const { match } = this.props;
-
     return (
-      <div>
+      <div className="form">
         <form onSubmit={this.handleSubmit}>
-          {/* <h1>Gadget Form {match.params.id}</h1> */}
           {this.renderInput("title", "Title")}
 
           {this.renderSelect("categoryId", "Category", this.state.categories)}
