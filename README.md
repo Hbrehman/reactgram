@@ -1,8 +1,7 @@
 # REACT GRAM
-  An online marketplace application with seller accounts, product search and suggestions, shopping cart, order management, payment processing with Stripe, and live auction with Socket.io - developed using React, Node, Express and MongoDB. 
+ Built with React and Firebase to enhance my programming skills. Main functions include Searching, Sorting, Filtering, and Pagination. 
 
-<img align="center" src="https://s3.amazonaws.com/mernbook/git+/marketplace.png" width="56%"> <img align="center" src="https://mernbook.s3.amazonaws.com/git+/marketplace-bidding.png" width="42%">
-
+<img align="center" src="https://drive.google.com/file/d/1VWABJeyyIzoSqJG2g5ap9X9zuEHiK3lV/view?usp=sharing" width="56%">
 ### [Live Demo](https://https://card-project-6d96a.web.app/ "REACT GRAM")
 
 #### What you need to run this code
