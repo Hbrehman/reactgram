@@ -1,8 +1,0 @@
-{
-  "jwtPrivateKey": "unsecureKey",
-  "db": "mongodb+srv://hbrehman:hbrehman@cluster0.g9weh.mongodb.net/gadgeties?retryWrites=true&w=majority",
-  "port": "3900",
-  "requiresAuth": true
-}
-
-
