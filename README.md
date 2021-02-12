@@ -1,8 +1,7 @@
 # REACT GRAM
  Built with React and Firebase to enhance my programming skills. Main functions include Searching, Sorting, Filtering, and Pagination. 
 
-<img align="center" src="https://drive.google.com/file/d/1VWABJeyyIzoSqJG2g5ap9X9zuEHiK3lV" width="56%">
-![image](https://drive.google.com/file/d/1VWABJeyyIzoSqJG2g5ap9X9zuEHiK3lV)
+<img align="center" src="https://drive.google.com/file/d/1QTQeRaJtSk7HDCo1630KbsHRaFgE3WXC" width="56%">
 
 ### [Live Demo](https://card-project-6d96a.web.app/)
 
