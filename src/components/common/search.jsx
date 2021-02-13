@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
 import TextField from "@material-ui/core/TextField";
+import CounterContext from "./../../context/counterContex";
 
-const Search = ({ onChange }) => {
+const Search = () => {
+  const { onSearchChange } = useContext(CounterContext);
   return (
     <TextField
-      onChange={onChange}
+      onChange={onSearchChange}
       variant="standard"
       color="primary"
       type="text"
