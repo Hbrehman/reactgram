@@ -7,5 +7,11 @@ pipeline {
       }
     }
 
+    stage('print current directory') {
+      steps {
+        sh 'ls -la'
+      }
+    }
+
   }
 }
