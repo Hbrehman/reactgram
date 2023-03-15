@@ -16,11 +16,8 @@ pipeline {
         }
 
         stage('Install dependencies') {
-          environment {
-            PATH = '~/.nvm/versions/node/v16.19.1/bin'
-          }
           steps {
-            sh '$PATH/npm install'
+            sh '~/.nvm/versions/node/v16.19.1/bin/npm install'
           }
         }
 
