@@ -20,7 +20,7 @@ pipeline {
             PATH = '~/.nvm/versions/node/v16.19.1/bin'
           }
           steps {
-            sh 'npm install'
+            sh '$PATH/npm install'
           }
         }
 
