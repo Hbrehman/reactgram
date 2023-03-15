@@ -17,7 +17,7 @@ pipeline {
 
         stage('Install dependencies') {
           steps {
-            sh 'npm install'
+            sh '/.nvm/versions/node/v16.19.1/bin/npm install'
           }
         }
 
