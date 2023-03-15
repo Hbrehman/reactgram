@@ -8,8 +8,19 @@ pipeline {
     }
 
     stage('print current directory') {
-      steps {
-        sh 'ls -la'
+      parallel {
+        stage('print current directory') {
+          steps {
+            sh 'ls -la'
+          }
+        }
+
+        stage('Install dependencies') {
+          steps {
+            sh 'npm i'
+          }
+        }
+
       }
     }
 
