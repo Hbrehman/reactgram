@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('git checkout') {
       steps {
-        git(url: 'https://github.com/Hbrehman/reactgram/tree/main', branch: 'main')
+        git(url: 'https://github.com/Hbrehman/reactgram.git', branch: 'main')
       }
     }
 
